@@ -33,7 +33,7 @@ Following are the scripts the pipeline uses in more detail:
 
 **random_seq.pl** -> Selects a random subsample of sequences from the fasta file and creates an output file with the subsamples. The FASTA file is removed.
 
-**./euk_subset_blast.sh,prok_subset_blast.sh,other_subset_blast.sh** -> these three scripts perform a BLASTn local alignment to the random sample against the eukaryote,
+**euk_subset_blast.sh, prok_subset_blast.sh, other_subset_blast.sh** -> these three scripts perform a BLASTn local alignment to the random sample against the eukaryote,
 prokaryote and "other" reference database respectively. 
 
 The last script generates three separate BLASt alignments for each domain.
