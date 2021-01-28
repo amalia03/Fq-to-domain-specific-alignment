@@ -13,7 +13,7 @@ The **second** part aligns a subsample of a list of Fastq files to those three d
 - Aligns that subsample to each BLAST file. 
 - The data are depicted using R.
 
-### Part 1: setting up the domin directories. 
+### Part 1: setting up the domain directories. 
 
 ### Part 2: the access, alignment and analysis of the samples:
 
