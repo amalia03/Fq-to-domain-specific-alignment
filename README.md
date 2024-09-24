@@ -25,9 +25,9 @@ To initiate the pipeline, you need to adjust the locations in the files and init
 
 Following are the scripts the pipeline uses in more detail:
 
-**import_fq.sh** -> the initiation command, it access the folder where the samples are and creates a loop in which it initiate the following command for each sample. The default choice of fw files is ".fq" but the code can be accessed to allow for more specialised file searches. 
+**import_fq.sh** -> the initiation command, it access the folder where the samples are and creates a command loop for each sample. The default choice of fw files is ".fq" but the code can be accessed to allow for more specialised file searches. 
 
-**fq_fa_blast.sh** -> this is the main pipeline command. It converts the fw file to an fa file, picks up n random sequences and then BLASTs them through the three different dommain files. This script utilizes all the scrips described below. 
+**fq_fa_blast.sh** -> this is the main pipeline command. It converts the fq file to an fa file, picks up n random sequences and then BLASTs them through the three different domain files. This script utilizes all the scrips described below. 
 
 **fastq_to_fasta.sh** -> Converts the fastq file to a fasta file.
 
@@ -36,4 +36,4 @@ Following are the scripts the pipeline uses in more detail:
 **euk_subset_blast.sh, prok_subset_blast.sh, other_subset_blast.sh** -> these three scripts perform a BLASTn local alignment to the random sample against the eukaryote,
 prokaryote and "other" reference database respectively. 
 
-The last script generates three separate BLASt alignments for each domain.
+The last step generates three separate BLASt alignments for each domain.
